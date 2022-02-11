@@ -1,0 +1,78 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+    header.header.js-header
+        .w-center.header__wrapper
+            .header__menu-logo.header__scroll-logo.js-header
+                img(src='static/img/content/logo.svg' alt='logo')
+
+            .header__toggle-wrap
+                .header__toggle-menu
+                    .header__line.line1
+                    .header__line.line2
+                    .header__line.line3
+            nav.header__nav.nav-bar
+                .header__menu-wrap
+                    .header__menu-nav-wrap
+                        ul.header__nav-list
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-home(href='/') Home
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-about(href='/#about') About
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-classes(href='/#classes') Classes
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-gui(href='/#guidance') Guidance
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-values(href='/#values') Values
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-contacts(href='/#contacts') Contacts
+                        .header__select
+                            select.change-lang
+                                option(value="en") EN
+                                option(value="ru") RU
+                    .header__menu-form-wrap
+                        .header__menu-form-title.lng-contacts-title3 Contact us
+                        .header__menu-form-subtitle.lng-form-subtitle
+                            | Can"t wait to join our creative surroundings? Don"t hesitate! Leave your inquiry, and our manager will contact you soon.
+                        .form
+                            .form__wrap
+                                form#form.form__form(enctype='multipart/form-data' action='' method='post' onsubmit="send(event, 'send.php')")
+                                    .form__group
+                                        label.form__label.lng-contacts-name2(for='name') Name
+                                        input#name.form__control(type='text' name='name' placeholder='' required='required')
+                                    .form__group
+                                        label.form__label.lng-contacts-phone2(for='phone') Phone
+                                        input#phone.form__control(type='text' name='phone' placeholder='' required='required')
+                                    .form__group
+                                        label.form__label.lng-contacts-email2(for='email') Email
+                                        input#email.form__control(type='email' name='email' placeholder='' required='required')
+                                    .form__group
+                                        button.form__btn.btn.lng-contacts-btn2(type='submit') Send
+
+    .w-inner.privacy-section
+        .w-center
+            .lng-privacy1
+                h1 Privacy Policy
+                p Collection, processing, use, transfer, and storage of personal data are performed by the company in compliance with legal, technical, and organizational standards of data processing.
+                p Personal data may be used or transferred to third parties only with the written consent of the client. If you post your data on the company’s website, you agree to our privacy policy.
+                p Access to personal data shall only be granted to authorized employees acting within the scope of their official duties. Employees are prohibited from using our customers’ and partners’ personal data for their own personal and commercial purposes. These obligations continue even after the employees’ termination and do not expire.
+                p The company makes sure that upon termination of the contract, as well as termination of use of the application, all personal data is properly destroyed.
+                p The person has the right to request the following actions to protect personal data:
+            ul.privacy-list.lng-privacy-list
+                li data receiving time and method reported;
+                li terms, reasons, ways, and goals of personal data processing exposed;
+                li being acquainted with personal data collected in the agreed time;
+                li being notified when personal data transferred to third parties;
+                li being aware on who and what for gains the access to their personal data;
+                li personal data improved in case of proved incompletion, obsoletion, and inaccuracy;
+                li processing of personal data reported;
+                li newsletters subscription canceled;
+                li data processing stopped, when relevant consent revoked;
+                li data processing stopped, when the illegal way of data collection proved;
+                li personal data destroyed in case the illegal way of its gaining proved or the company liquidated.
+            .lng-privacy2
+                p Сhryses Creative Studio provides the privacy of personal data in accordance with Romanian law, Constitution of Romania in particular, and other normative legal acts regarding personal data protection, including general regulations on European Union data protection GDPR.
+                p Сhryses Creative Studio keeps the right to change Privacy Policy. By agreeing to this provision, you also agree with all following changes. That is why we advise our users to check this policy relevance before attending our website.
+                p We may use cookies (small data files stored on your computer’s hard drive) to gain information about your online activity, including URL that you came from, pass and follow, your browser version, operation system and gadget type, your IP address, etc. This is the information that we use carefully to create better user experience for our customers.

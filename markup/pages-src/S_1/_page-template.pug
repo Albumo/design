@@ -1,0 +1,40 @@
+include ../components/common/head
+include ../components/common/include-js
+include ../components/common/img-svg
+
+include ../components/%=component_header=%/header/header
+include ../components/%=component_footer=%/footer/footer
+
+doctype html
+html(class="no-js" lang="en")
+    head
+        +head
+    body
+        .w-outer
+
+            block content
+
+            +footer
+            .popup
+                .popup__wrap
+                    .popup__title Contact Us
+                    span.js-close.form__close.popup__close
+                    .form
+                        .form__wrap
+                            form#form.form__form(enctype='multipart/form-data' action='' method='post' onsubmit="send(event, 'send.php')")
+                                .form__group
+                                    label.form__label(for='name') Name
+                                    input#name.form__control(type='text' name='name' placeholder='' required='required')
+                                .form__group
+                                    label.form__label(for='phone') Phone
+                                    input#phone.form__control(type='text' name='phone' placeholder='' required='required')
+                                .form__group
+                                    label.form__label(for='email') Email
+                                    input#email.form__control(type='email' name='email' placeholder='' required='required')
+                                .form__group
+                                    button.form__btn.btn(type='submit') Send
+            a.button-link2(href='https://t.me/fourseasonsb' role='button')
+            a.button-link(href='https://t.me/fourseasondesign_bot' role='button')
+        +include-js
+
+        block scripts

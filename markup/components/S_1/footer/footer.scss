@@ -1,0 +1,101 @@
+.footer {
+    padding: 25px 0;
+    background: #FFF;
+    color: #1B1B1B;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    &__logo-wrap {
+        max-width: 100px;
+
+        img {
+            display: inline-block;
+            @include support(object-fit, cover) {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__contacts-wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &__contacts-mail {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bottom-links {
+        @extend %ul-reset;
+        margin-top: 10px;
+        padding: 18px 0;
+    }
+
+    &__link {
+        a {
+            color: #1B1B1B;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @include respond-from(sm) {
+
+        &__bottom-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        &__contacts-wrap {
+            justify-content: flex-end;
+        }
+
+        &__contacts-policy {
+            text-align: right;
+        }
+
+    }
+
+    @include respond-from(md) {
+        &__wrap {
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row;
+        }
+
+        &__logo-wrap {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        &__menu-logo {
+            max-width: 160px;
+        }
+
+        &__contacts-wrap {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &__contacts-mail:after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 30px;
+            margin: 0 15px;
+            background: #e44f36;
+        }
+    }
+}

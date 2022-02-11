@@ -1,0 +1,144 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+    +header
+    .w-inner
+        #about.text.first-text
+            .w-center
+                .text__wrap
+                    .text__wrap-left
+                        .text__title.lng-about-title ABOUT US
+                        .text__subtitle.lng-about-text We are a school for a new generation of designers with our style and vision. Our teachers will appreciate your courageous decisions and help develop a professional flair for implementation in the fastest-growing field. Join us!
+                        button.btn.popup-btn.lng-btn More information
+                    .text__wrap-right
+                        .text__bg-text-wrap
+                            .text__bg-text US
+                            .text__bg-text ABOUT
+                        .text__img-wrap
+                            img(src='static/img/content/st1.png' alt='')
+
+        #classes.text.colored
+            .w-center
+                .text__wrap
+                    .text__wrap-left
+                        ul.text__list
+                            li.text__list-item.popup-btn
+                                .text__list-item-link
+                                    .text__list-title.lng-design UX/UI Design
+                                    .text__list-text.lng-design-text Learn how to create mobile app prototypes, design websites, draw banners, logos, and other corporate identity elements. Become a middle-level specialist faster than any other field might offer.
+                                    .text__list-text.lng-design-price <strong>Starter pack from 190 euro</strong>
+                            li.text__list-item.popup-btn
+                                .text__list-item-link
+                                    .text__list-title.lng-3ddesign 3D Desgin
+                                    .text__list-text.lng-3ddesign-text Create realistic images and apply the principles of spatial and color composition, using basic knowledge of 3dsmax, AutoCAD/Autodesk, Maya/Maxon, and Cinema4D programs.
+                                    .text__list-text.lng-3ddesign-price <strong>Starter pack from 190 euro</strong>
+                            li.text__list-item.popup-btn
+                                .text__list-item-link
+                                    .text__list-title.lng-photoshop Photoshop and Illustrator
+                                    .text__list-text.lng-photoshop-text Gain some knowledge and use classic vector graphics editor Illustrator for creating logos, layout, and combine it with Adobe"s Creative Cloud products, including InDesign and Photoshop.
+                                    .text__list-text.lng-photoshop-price <strong>Starter pack from 190 euro</strong>
+                            li.text__list-item.popup-btn
+                                .text__list-item-link
+                                    .text__list-title.lng-typography Logo and Typography
+                                    .text__list-text.lng-typography-text Gain some knowledge and use classic vector graphics editor Illustrator for creating logos, layout, and combine it with Adobe"s Creative Cloud products, including InDesign and Photoshop.
+                                    .text__list-text.lng-typography-price <strong>Starter pack from 190 euro</strong>
+                    .text__wrap-right
+                        .text__bg-text-wrap
+                            .text__bg-text CLASSES
+                            .text__bg-text OUR
+                        .text__img-wrap
+                            img(src='static/img/content/st2.png' alt='')
+
+        #guidance.text.text-teachers
+            .w-center
+                .text__wrap
+                    .text__wrap-right
+                        .text__bg-text-wrap
+                            .text__bg-text GUIDANCE
+                            .text__bg-text OUR
+                        .text__img-wrap
+                            img(src='static/img/content/st3.png' alt='')
+                    .text__wrap-left
+                        .slider
+                            .slider__wrap
+                                .slider__wrap
+                                    .slider__authors.js-slider
+                                        .slider__author
+                                            img(src='static/img/content/author.jpg' alt='')
+                                        .slider__author
+                                            img(src='static/img/content/author2.jpg' alt='')
+                                        .slider__author
+                                            img(src='static/img/content/author3.jpg' alt='')
+                                        .slider__author
+                                            img(src='static/img/content/author4.jpg' alt='')
+
+
+        #values.text.colored
+            .w-center
+                .text__wrap
+                    .text__wrap-left
+                        ul.text__list
+                            li.text__list-item.about__list-item
+                                .text__list-item-link
+                                    .text__list-title.lng-smart Smart creativity
+                                    .text__list-text.lng-smart-text Our students learn to combine practical skills and creative thinking in ideal proportions, which allows them to act thoughtfully and brightly, creating a portfolio.
+                            li.text__list-item.about__list-item
+                                .text__list-item-link
+                                    .text__list-title.lng-individual Individual approach
+                                    .text__list-text.lng-individual-text
+                                        | Before we start studying, we want to know everything about the taste preferences of our students and their expectations. We also take into account students" backgrounds to maximize their abilities.
+                            li.text__list-item.about__list-item
+                                .text__list-item-link
+                                    .text__list-title.lng-attention Attention to detail
+                                    .text__list-text.lng-attention-text
+                                        | We know that the little things are important, so we work with every detail and teach it. In addition, we create a unique authoring style that makes the portfolio of our students unique.
+
+                            li.text__list-item.about__list-item
+                                .text__list-item-link
+                                    .text__list-text.lng-alt The cost of all courses is agreed on an individual basis, depending on the required volume for study. </br> To clarify the cost, you should fill out a contact form.
+                    .text__wrap-right
+                        .text__bg-text-wrap
+                            .text__bg-text values
+                            .text__bg-text.text__alternative-bg-wrap
+                                | our
+                                .text__alternative-bg-text
+                                    span.coloring Design
+                                    |  is at your feet
+                        .text__img-wrap
+                            img(src='static/img/content/st4.png' alt='')
+
+        #contacts.text.text-contacts
+            .w-center
+                .text__wrap
+                    .text__wrap-right
+                        .text__bg-text-wrap
+                            .text__bg-text tacts
+                            .text__bg-text con
+                        .text__img-wrap
+                            img(src='static/img/content/st5.png' alt='')
+                    .text__wrap-left
+                        .text__contacts-title.lng-contacts-title Write to us
+                        .text__contacts-wrap
+                            .text__contacts-mail info@fourseasonsdesign.net
+                            .text__contacts-tel +40791207939
+                        .text__list-text.lng-contacts-text
+                            | Can"t wait to join our creative surroundings? Don"t hesitate! Leave your inquiry, and our manager will contact you soon.
+                        .text__form-wrap
+                            .text__contacts-title.w-gap-lg.lng-contacts-title2 Write to us
+                            .w-gap-lg
+                                .form
+                                    .form__wrap
+                                        form#form.form__form(enctype='multipart/form-data' action='' method='post' onsubmit="send(event, 'send.php')")
+                                            .form__group
+                                                label.form__label.lng-contacts-name(for='name') Name
+                                                input#name.form__control(type='text' name='name' placeholder='' required='required')
+                                            .form__group
+                                                label.form__label.lng-contacts-phone(for='phone') Phone
+                                                input#phone.form__control(type='text' name='phone' placeholder='' required='required')
+                                            .form__group
+                                                label.form__label.lng-contacts-email(for='email') Email
+                                                input#email.form__control(type='email' name='email' placeholder='' required='required')
+                                            .form__group
+                                                button.form__btn.btn.lng-contacts-btn(type='submit') Send
+

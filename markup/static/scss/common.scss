@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+
+ul {
+    list-style: disc;
+}
+
+label {
+    cursor: pointer;
+}
+
+body {
+    font-family: $font-main;
+    line-height: $line-height;
+}
+
+@include respond-from(to-md) {
+    * {
+        outline: none;
+    }
+}

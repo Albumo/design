@@ -1,0 +1,80 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+    header.header.js-header
+        .w-center.header__wrapper
+            .header__menu-logo.header__scroll-logo.js-header
+                img(src='static/img/content/logo.svg' alt='logo')
+
+            .header__toggle-wrap
+                .header__toggle-menu
+                    .header__line.line1
+                    .header__line.line2
+                    .header__line.line3
+            nav.header__nav.nav-bar
+                .header__menu-wrap
+                    .header__menu-nav-wrap
+                        ul.header__nav-list
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-home(href='/') Home
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-about(href='/#about') About
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-classes(href='/#classes') Classes
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-gui(href='/#guidance') Guidance
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-values(href='/#values') Values
+                            li.header__nav-list-item
+                                a.header__nav-link.lng-contacts(href='/#contacts') Contacts
+                        .header__select
+                            select.change-lang
+                                option(value="en") EN
+                                option(value="ru") RU
+                    .header__menu-form-wrap
+                        .header__menu-form-title.lng-contacts-title3 Contact us
+                        .header__menu-form-subtitle.lng-form-subtitle
+                            | Can"t wait to join our creative surroundings? Don"t hesitate! Leave your inquiry, and our manager will contact you soon.
+                        .form
+                            .form__wrap
+                                form#form.form__form(enctype='multipart/form-data' action='' method='post' onsubmit="send(event, 'send.php')")
+                                    .form__group
+                                        label.form__label.lng-contacts-name2(for='name') Name
+                                        input#name.form__control(type='text' name='name' placeholder='' required='required')
+                                    .form__group
+                                        label.form__label.lng-contacts-phone2(for='phone') Phone
+                                        input#phone.form__control(type='text' name='phone' placeholder='' required='required')
+                                    .form__group
+                                        label.form__label.lng-contacts-email2(for='email') Email
+                                        input#email.form__control(type='email' name='email' placeholder='' required='required')
+                                    .form__group
+                                        button.form__btn.btn.lng-contacts-btn2(type='submit') Send
+    .w-inner.privacy-section
+        .w-center
+            .lng-terms1
+                h1 Terms of Use
+                h3 Responsibility limitations
+                p We review this website publications aimed at informing you about our company values, prices, and services, yet, we don’t guarantee our website meets your expectations. Some inaccuracies, typos and technical mistakes are possible.
+                h3 Copyright
+                p This website content legal status, website users’ rights and responsibilities fall under the copyright law of Romania, Law No. 8 of March 14, 1996. You agree not to impact or facilitate influence aimed at affecting our intellectual property right and ownership. You agree to inform us in case of relevant suspicion regarding third parties involved.
+                p <strong> You agree to refrain from and not to facilitate:</strong>
+            ul.privacy-list.lng-list
+                li this website and its elements’ duplication, modification, or damaging as well as use of software aimed at those purposes;
+                li this website data collecting or extracting via relevant software or in other way prohibited by our terms of use;
+                li this website content reproduction that may damage our intellectual property right and ownership.
+            .lng-terms2
+                h3 Jurisdiction
+                p This website is hosted in Romania.
+                p This agreement is made in Russian, Romanian and English languages. In case of any contradictions between different language versions, English one prevails as the official EU language.
+                p This agreement execution is covered by the laws of Romania, so you agree that any dispute litigation arising from it takes place in that legal jurisdiction.
+                h3 Contacting us
+                p If you have any questions or concerns about these terms, please, contact us via e-mail address indicated on the website.
+                h3 Indemnification
+                p You agree to indemnify, defend and hold harmless the Company, its directors, officers, employees, consultants, agents, and affiliates, from any and all third party claims, liability, damages or costs arising from your use of this website, your breach of these Terms of Service, or infringement of any intellectual property right.
+                h3 Violation & Termination
+                p You agree that the Company may, in its sole discretion and without prior notice, terminate your access to the website and block your future access if we determine that you have violated these Terms of Service or any other policies. If you or the Company terminates your use of any service, you shall still be liable to pay for any service that you have already ordered till the time of such termination.
+                h3 Disclaimer
+                p <strong> In no event will the company or its representatives be liable for any damages, arising out of or related to misuse of personal information of the customer, and the customer is solely liable for such acts, and they are advised not to share their confidential information like OTP, credit/debit card expiry and CVV with anyone even though they claim to be a company employee. None of our employee will ask for such confidential information.</strong>
+                p If you have any questions, comments or requests regarding our Terms of Service or the website please contact us via contacts mentioned on the website.
+                p Using our website, you are governed by all applicable terms, conditions, limitations, and requirements, all of which (as changed over time) are incorporated into these Terms. By continuing this website use, you accept these terms, conditions, limitations, and requirements.

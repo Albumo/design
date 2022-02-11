@@ -1,0 +1,24 @@
+mixin footer()
+    footer.footer
+        .msg-wrap
+            .msg(onclick='gsapMsg.reverse()')
+        .w-center
+            .footer__wrap
+                .footer__logo-wrap
+                    .footer__menu-logo
+                        img(src='static/img/content/logo.svg' alt='logo')
+                .footer__btn-up
+                    button#scroll.btn-up
+                .footer__contacts
+                    .footer__contacts-wrap
+                        .footer__contacts-mail info@fourseasonsdesign.net
+                        .text__contacts-tel +40791207939
+                    .footer__contacts-policy Four Seasons Beauty SRL
+                    .footer__contacts-policy ROMANIA,BUCHAREST DISTRICT 2,
+                    .footer__contacts-policy LT Street. VICTOR MANU, Nr. 36, Block C2, Scale B, AP.7
+            .footer__bottom
+                ul.footer__bottom-links
+                    li.footer__link
+                        a.lng-privacy(href='/privacy.html') Privacy Policy
+                    li.footer__link
+                        a.lng-terms(href='/terms.html') Terms & Conditions
