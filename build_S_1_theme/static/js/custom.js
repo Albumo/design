@@ -153,7 +153,6 @@ function  changeLanguage () {
         location.reload()
     }
     select.value = hash;
-    document.querySelector('.lng-about-title').innerHTML = langArr['about-title'][hash];
 
     for (let key in langArr) {
         let elem = document.querySelector('.lng-'+key);
