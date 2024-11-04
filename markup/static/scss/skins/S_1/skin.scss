@@ -18,7 +18,6 @@ body {
     url("../fonts/Bison-ThinOutline.ttf") format("truetype");
 }
 
-
 html {
     height: 100%;
     @include respond-from(to-sm) {
@@ -26,6 +25,15 @@ html {
     }
 
     font-size: $font-size;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 //Footer bottom

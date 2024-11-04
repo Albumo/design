@@ -28,7 +28,12 @@
 
     &__contacts-mail {
         display: flex;
+        color: #1B1B1B;;
         align-items: center;
+    }
+
+    &__contacts-tel {
+        color: #1B1B1B;
     }
 
     &__bottom-links {

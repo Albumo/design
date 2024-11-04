@@ -135,7 +135,7 @@ window.onload = function () {
 };
 
 const select = document.querySelector('select');
-const allLang = ['en', 'ru'];
+const allLang = ['en', 'ua'];
 
 select.addEventListener('change', changeURLLanguage);
 // перенаправить url c указанием языка
